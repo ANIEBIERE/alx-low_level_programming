@@ -1,21 +1,20 @@
 #include <stdio.h>
+#include "main.h"
 /**
- * _squart - finds the square root
- * 
- * @x: input number
- * 
- * Return: square root of x
- */
+ * main - prints the largest prime factor of 612852475143
+ * Bwave ICT / Bright Daniel
+ * Return: always 0
+ **/
+
 int main(void)
 {
-	long i;
-	long num = 612852475143;
+	unsigned long int i, n = 612852475143;
 
-	for (i = 2; i < num; i++)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		if (num % i == 0)
-		num /= i;
+		while ((n % i == 0) && (n != i))
+			n = n / i;
 	}
-	printf("%li\n", num);
+	printf("%lu\n", n);
 	return (0);
 }
