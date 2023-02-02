@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts a binary number to an
+ * binary_to_uint - program converts a binary number to an
  * unsigned int.
  * @b: binary.
  *
@@ -34,5 +34,4 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	return (ui);
-}
-
+} /**Aniebiere*/
